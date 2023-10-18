@@ -17,45 +17,42 @@
 </head>
 
 <body>
-    <div style="background-image: url(assets/BG_PIC.png);">
-        <nav class="rounded-full bg-white sticky top-1 z-50 mx-4 lg:mx-20">
-            <div class="navbar">
-                <div class="navbar-start flex items-center">
-                    <a class="btn btn-ghost normal-case text-xl flex items-center bg-transparent hover:bg-transparent">
-                        <img src="./assets/KBIHU.png" alt="" class="w-12 h-12 rounded-full">
-                        <span class="ml-2 text-[#2E7875] font-poppins text-lg">KBIHU Al-Karimiyah</span>
-                    </a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 font-semibold text-lg font-poppins">
-                        <li><a class="mx-3">Home</a></li>
-                        <li><a class="mx-3">About</a></li>
-                        <li><a class="mx-3">Program</a></li>
-                        <li><a class="mx-3">Gallery</a></li>
+    <nav class="rounded-full bg-white sticky top-2 z-50 mx-4 lg:mx-20 py-1">
+        <div class="navbar">
+            <div class="navbar-start flex items-center">
+                <a class="btn btn-ghost normal-case text-xl flex items-center bg-transparent hover:bg-transparent">
+                    <img src="./assets/KBIHU.png" alt="" class="w-12 h-12 rounded-full">
+                    <span class="ml-2 text-[#2E7875] font-poppins text-lg">KBIHU Al-Karimiyah</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-semibold text-lg font-poppins">
+                    <li><a href="#home" class="mx-3">Home</a></li>
+                    <li><a href="#about" class="mx-3">About</a></li>
+                    <li><a href="#program" class="mx-3">Program</a></li>
+                    <li><a class="mx-3">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <!-- Tambahkan elemen-elemen navbar end di sini -->
+            </div>
+            <div class="lg:hidden flex items-center navbar-end">
+                <div class="dropdown dropdown-end">
+                    <button tabindex="0" class="btn bg-[#2E7875] rounded-full hover:bg-current">
+                        <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
+                    </button>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 font-poppins">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#program">Program</a></li>
+                        <li><a>Gallery</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end hidden lg:flex">
-                    <!-- Tambahkan elemen-elemen navbar end di sini -->
-                </div>
-                <div class="lg:hidden flex items-center navbar-end">
-                    <div class="dropdown dropdown-end">
-                        <button tabindex="0" class="btn bg-[#2E7875] rounded-full hover:bg-current">
-                            <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
-                        </button>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] shadow bg-base-100 rounded-box w-52 font-poppins">
-                            <li><a>Home</a></li>
-                            <li><a>About</a></li>
-                            <li><a>Program</a></li>
-                            <li><a>Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
-        </nav>
-
-
-
+        </div>
+    </nav>
+    <div id="home" style="background-image: url(assets/BG_PIC.png);">
         <div class="hero min-h-screen">
             <div class=""></div>
             <div class=" hero-content text-center text-white">
@@ -154,7 +151,7 @@
 
         </main>
     </div>
-    <section>
+    <section id="about">
         <div class="hero min-h-screen bg-white">
             <div class="hero-content flex-col lg:flex-row-reverse items-center">
                 <!-- Menggunakan items-center untuk memusatkan konten pada tampilan mobile -->
@@ -184,7 +181,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-[#2E7875]" style="background-image: url(./assets/icon.svg);">
+    <section id="program" class="bg-[#2E7875]" style="background-image: url(./assets/icon.svg);">
         <div class="min-h-screen">
             <div class="flex justify-center text-center">
                 <div class="max-w-full px-4 sm:px-6 lg:px-8">
